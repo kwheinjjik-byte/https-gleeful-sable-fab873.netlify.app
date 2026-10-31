@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>دورة فيكل لتخطي القدرات | Fikl</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="lgg" gradientUnits="userSpaceOnUse" x1="0" y1="296" x2="0" y2="746"><stop offset="0" stop-color="#c8203f"/><stop offset="1" stop-color="#951430"/></linearGradient><g id="lg" fill="url(#lgg)" stroke="url(#lgg)" stroke-linejoin="round" stroke-width="6"><path d="M543 296H771L626 442H472V595L293 746 290 553Z"/><path d="M572 543 724 625 572 705Z"/></g></defs></svg>
+<header><div class="w"><nav>
+<div class="logo"><svg width="42" height="40" viewBox="280 285 500 480" aria-hidden="true"><use href="#lg"/></svg><div>فيكل<small>Fikl</small></div></div>
+<div class="links"><a class="on" href="#top">الرئيسية</a><a href="#offer">الدورات</a><a href="#quiz">الأسئلة</a><a href="#quiz">الاختبارات التجريبية</a><a href="#about">من نحن</a><a href="https://wa.me/message/SMK7RY3SA6SPA1" target="_blank" rel="noopener">تواصل معنا</a></div>
+<div><button class="btn o nav-b" id="loginBtn" onclick="openM('تسجيل الدخول','دخول')">👤 تسجيل الدخول</button> <button class="btn nav-b" onclick="openM('إنشاء حساب جديد','إنشاء الحساب')">＋ إنشاء حساب</button></div>
+</nav></div></header>
+
+<div class="hero" id="top"><div class="w">
+<div><h1>دورة فيكل لتخطي القدرات</h1><p>منصة متكاملة لأسئلة القدرات (لفظي وكمي) مع دورة تدريبية مميزة</p><p>أقوى تدريب .. لأعلى درجة</p><a class="btn" href="#quiz">ابدأ الآن ←</a></div>
+<svg viewBox="280 285 500 480" aria-hidden="true"><use href="#lg"/></svg>
+</div></div>
+
+<div class="w">
+<div class="promo" id="offer">
+<div class="badge">👑<br>عرض مميز<br>لفترة محدودة</div>
+<div class="pr"><b>19</b> ريال فقط<button class="btn" onclick="openPay()">🛒 اشترك الآن</button></div>
+<ul><li>شرح مبسط ومركز</li><li>أسئلة متنوعة ومحدثة</li><li>متابعة مستمرة</li></ul>
+<div><h3>دورة فيكل لتخطي القدرات</h3><p>دورة متكاملة تشمل شرح شامل لقسمي القدرات (اللفظي والكمي) مع تدريبات مكثفة واختبارات تجريبية.</p></div>
+</div>
+
+<div class="main" id="quiz">
+<div class="card">
+<div class="tabs"><button class="tab on" id="tv" onclick="sec('v')">📖 اللفظي</button><button class="tab" id="tq" onclick="sec('q')">🧮 الكمي</button><button class="tab r" onclick="sec(cur)">⟳ الأسئلة التجريبية</button></div>
+<div class="qbox"><div class="timer"><small>⏱ الوقت المتبقي</small><b id="tm">20:00</b></div><div id="qa"></div></div>
+</div>
+<aside class="side">
+<div class="card"><h4>📊 أداؤك في الاختبارات</h4>
+<div class="ring" id="ring"><div id="pct">0%</div></div><div style="text-align:center;color:var(--mut);font-size:14px">نسبة الإجابة الصحيحة</div>
+<div style="margin-top:14px"><div class="st"><span>🏆 عدد المحاولات</span><b id="att">0</b></div><div class="st"><span>🕒 آخر محاولة</span><b id="lastA">—</b></div></div></div>
+<div class="card streak"><h4>🔥 الستريك اليومي</h4>
+<div class="big"><span>🔥</span><div><span id="sn" style="font-size:34px">0</span> <small style="font-size:16px">يوم متتالي</small></div></div>
+<div class="wk" id="wk"></div>
+<div style="font-size:13px;margin-top:10px" id="smsg">حل سؤالًا واحدًا اليوم لتبدأ الستريك!</div></div>
+<div class="card go"><span>استمر في التدريب<br>لتحقق أفضل نتيجة!</span><span style="font-size:36px">📈</span></div>
+</aside>
+</div></div>
+
+<footer id="about">© 2026 دورة فيكل لتخطي القدرات | Fikl — <a href="https://wa.me/message/SMK7RY3SA6SPA1" target="_blank" rel="noopener" style="color:#fff;font-weight:700">تواصل معنا عبر واتساب</a></footer>
+<a class="wa" href="https://wa.me/message/SMK7RY3SA6SPA1" target="_blank" rel="noopener">💬 واتساب</a>
+
+<div class="modal" id="m"><div class="card"><h2 style="margin:0 0 8px;font-size:22px" id="mt"></h2><div id="mb">
+<input id="nm" placeholder="الاسم"><input id="em" type="email" placeholder="البريد الإلكتروني" dir="ltr" style="text-align:right">
+<div style="font-size:13px;color:var(--mut);margin-bottom:12px">نسخة تجريبية: لا يوجد دفع أو تسجيل حقيقي.</div>
+<button class="btn" id="mgo" style="width:100%;justify-content:center" onclick="done()"></button>
+<button class="btn o" style="width:100%;justify-content:center;margin-top:8px" onclick="closeM()">إلغاء</button></div></div></div>
+
+<div class="modal" id="pm"><div class="card"><h2 style="margin:0 0 6px;font-size:22px">الاشتراك في دورة فيكل — 19 ريال</h2>
+<div style="color:var(--mut);font-size:14px">طريقة الدفع: التحويل البنكي (مصرف الراجحي)</div>
+<div class="bank"><div><span>البنك</span><b>مصرف الراجحي</b></div><div><span>اسم المستفيد</span><b>[اسم المستفيد]</b></div><div><span>رقم الآيبان</span><b id="ib" dir="ltr">[رقم الآيبان]</b></div><div><span>المبلغ</span><b>19 ريال</b></div></div>
+<button class="btn o" style="width:100%;justify-content:center" onclick="cp()" id="cpb">نسخ رقم الآيبان</button>
+<p style="font-size:14px;color:var(--mut)">بعد التحويل أرسل صورة الإيصال عبر واتساب ليتم تفعيل اشتراكك.</p>
+<a class="btn" style="width:100%;justify-content:center;background:#25d366" href="https://wa.me/message/SMK7RY3SA6SPA1" target="_blank" rel="noopener">💬 إرسال الإيصال عبر واتساب</a>
+<button class="btn o" style="width:100%;justify-content:center;margin-top:8px" onclick="$('pm').className='modal'">إغلاق</button></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
